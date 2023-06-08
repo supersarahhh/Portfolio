@@ -116,7 +116,7 @@ justify-content: left;
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   position: fixed;
   top: 2%;
   right: 0;
@@ -125,7 +125,6 @@ justify-content: left;
 
 .AboutButton {
   text-align: right;
-  margin: 5px;
   height: 75px;
   width: 150px;
   color: white;
@@ -143,7 +142,6 @@ justify-content: left;
 
 .ProjectButton {
   text-align: right;
-  margin: 5px;
   height: 75px;
   width: 150px;
   color: white;
@@ -160,7 +158,6 @@ justify-content: left;
 
 .HomeButton {
   text-align: right;
-  margin: 5px;
   height: 75px;
   width: 150px;
   color: white;

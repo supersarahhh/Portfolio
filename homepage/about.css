@@ -28,9 +28,14 @@ h1 {
   
 }
 
+.pic-container {
+  height: 75vh;
+  width: auto;
+}
+
 .pic {
-  height: 450px;
-  width: 350px;
+  height: 100%;
+  width: auto;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -60,6 +65,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   
 }
 
