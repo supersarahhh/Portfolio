@@ -13,10 +13,13 @@ h1 {
   width: auto;
   color: white;
   border: transparent;
-  font-size: x-large;
+  font-size: xx-large;
   text-decoration: none;
-  text-shadow: 5px 5px 30px black;  
-  margin-right: 80%;
+  text-shadow: 5px 5px 10px black;
+  font-family: 'Montserrat', sans-serif;  
+  font-weight: 500;
+
+  margin-right: 70%;
   margin-top: 2%;
 
 }
@@ -24,11 +27,10 @@ h1 {
 
 .navContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: fixed;
   right: 0;
-  margin-top: 5%;
- 
+  justify-content: right;
 }
 
 .carousel-container {
@@ -76,61 +78,62 @@ h1 {
   background-color: transparent;
   color: aliceblue;
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
-  margin: 10px
-  
+  margin: 20px;
 }
 
 .ResumeButton {
+  text-align: right;
   margin: 5px;
   height: 75px;
-  width: 300px;
-  color: antiquewhite;
+  width: 150px;
+  color: white;
   border: transparent;
   font-size: x-large;
   transition: ease .3s;
   text-decoration: none;
-  text-align: right;
 
   background-color: transparent;
   justify-content: space-evenly;
+  justify-content: space-around;
+  justify-content: space-between;
  
 }
 
 .AboutButton {
+  text-align: right;
   margin: 5px;
   height: 75px;
-  width: 300px;
-  color: antiquewhite;
+  width: 150px;
+  color: white;
   border: transparent;
   font-size: x-large;
   transition: ease .3s;
   text-decoration: none;
-  text-align: right;
-
 
   background-color: transparent;
   justify-content: space-evenly;
-
+  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .HomeButton {
-    margin: 5px;
-    height: 75px;
-    width: 300px;
-    color: antiquewhite;
-    border: transparent;
-    font-size: x-large;
-    transition: ease .3s;
-    text-decoration: none;
-    text-align: right;
+  text-align: right;
+  margin: 5px;
+  height: 75px;
+  width: 150px;
+  color: white;
+  border: transparent;
+  font-size: x-large;
+  transition: ease .3s;
+  text-decoration: none;
 
-  
-    background-color: transparent;
-    justify-content: space-evenly;
-  
-  }
+  background-color: transparent;
+  justify-content: space-evenly;
+  justify-content: space-around;
+  justify-content: space-between;
+}
 
 
 .HomeButton:hover {
