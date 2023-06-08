@@ -55,5 +55,17 @@ resumeBtn.addEventListener('click', function() {
 });
 
 
+const kebab = document.querySelector('.menu');
+
+kebab.addEventListener('click', function() {
+  kebab.classList.toggle("change");
+
+  homeBtn.classList.toggle("hidden");
+  aboutBtn.classList.toggle("hidden");
+  resumeBtn.classList.toggle("hidden");
+
+  console.log('hamburg')
+});
+
 
 

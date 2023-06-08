@@ -34,7 +34,7 @@ h1 {
 }
 
 .pic {
-  height: 100%;
+  height: 75vh;
   width: auto;
   border-radius: 10px;
   display: flex;
@@ -53,12 +53,34 @@ p {
   
 }
 
-.container {
+.menu {
   display: flex;
   flex-direction: row;
   position: fixed;
   right: 0;
   justify-content: right;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 .about-container {
@@ -239,4 +261,8 @@ a {
     bottom: 0;
     right: 0;
     margin: 20px;
+  }
+
+  .hidden {
+    display: none;
   }

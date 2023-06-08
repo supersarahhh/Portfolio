@@ -21,3 +21,16 @@ resumeBtn.addEventListener('click', function() {
 projectBtn.addEventListener('click', function() {
     location.href = menuLinks[2].href;
 });
+
+const kebab = document.querySelector('.menu');
+
+kebab.addEventListener('click', function() {
+    kebab.classList.toggle("change");
+
+    homeBtn.classList.toggle("hidden");
+    resumeBtn.classList.toggle("hidden");
+    projectBtn.classList.toggle("hidden");
+
+    console.log('hamburg')
+});
+
