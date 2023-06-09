@@ -238,3 +238,23 @@ justify-content: left;
   margin-right: 50px;
 
 }
+
+#frame{
+  width: 100%;
+  height: 700px;
+}
+
+@media screen and (max-width: 480px) {
+
+  .HomeButton,
+  .AboutButton,
+  .ProjectButton {
+    font-size: medium;
+    
+  }
+  
+  #frame{
+    width: 100%;
+    height: 350px;
+  }
+}

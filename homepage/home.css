@@ -139,54 +139,55 @@ h1 {
 
 /* --mobile responsive code-- */
 
-  @media screen and (max-width: 800px) {
-    .container,
+  @media screen and (max-width: 820px) {
+
+    .container {
+        margin-top: 100px;
+    }
+    
     .typeContainer {
         margin: 20px;
+        width: 700px;
         justify-content: center;
-    }
 
+    }
+    
     body{
-        margin: 20px;
         justify-content: center;
         background-position: center;
         background-size: cover;
+        height: 100vh;
     }
-
-    .AboutButton,
-    .ResumeButton,
-    .ProjectButton {
-      width: 20%;
-      justify-content: center;
-    }
+  
 }
 
   @media screen and (max-width: 480px) {
     body{
-        margin: 20px;
         justify-content: center;
         background-position: center;
         background-size: cover;
+        height: 100vh;
     }
 
-    .container,
     .typeContainer {
-        margin: 20px;
-        justify-content: center;
+        display: none;
     }
+
   }
 
     @media screen and (max-width: 375px) {
         body{
-            margin: 20px;
             justify-content: center;
             background-position: center;
             background-size: cover;
         }
 
-        .container,
+        .container {
+            margin-top: 100px;
+
+        }
+
         .typeContainer {
-            margin: 10px;
             justify-content: center;
         }
 

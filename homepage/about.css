@@ -287,3 +287,70 @@ a {
     margin-right: 50px;
 
   }
+
+  @media screen and (max-width: 768px) {
+    .pic {
+      height: 50%;
+    }
+   
+}
+
+  @media screen and (max-width: 480px) {
+
+      .about-container{
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+
+      }
+
+     
+      .pic {
+        height: 150px;
+        
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .pic-container {
+        height: 200px;
+      }
+
+      .HomeButton,
+      .ResumeButton,
+      .ProjectButton {
+        font-size: medium;
+        
+      }
+   
+
+  }
+
+    @media screen and (max-width: 375px) {
+
+
+      .about-container{
+        display: flex;
+        flex-direction: column;
+      }
+
+      #modal {
+        margin-top: 10px;
+      }
+
+      .pic {
+        height: 50%;
+      }
+      .HomeButton,
+      .ResumeButton,
+      .ProjectButton {
+        font-size: medium;
+        
+      }
+       
+
+    }
+
+
