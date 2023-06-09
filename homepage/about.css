@@ -15,6 +15,8 @@ body    {
   height: auto;
   display: flex;
   flex-direction: column;
+  font-family: helvetica;
+
 }
 
 h1 {
@@ -25,7 +27,8 @@ h1 {
   text-shadow: 5px 5px 10px black;
   font-family: 'Montserrat', sans-serif;  
   font-weight: 400;
-  
+  display: flex;
+  justify-content: left;
 }
 
 .pic-container {
@@ -34,12 +37,12 @@ h1 {
 }
 
 .pic {
-  height: 75vh;
+  height: 45vh;
   width: auto;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  margin: 10px;
+  margin: 20px;
   margin-right: 0px;
   margin-top: 20px;
   box-shadow: 5px 5px 35px 5px;
@@ -48,8 +51,9 @@ h1 {
 
 p {
   color: whitesmoke;
-  font-size: large;
-  margin-left: 40px;
+  font-size: small;
+  font-style: helvetica;
+
   
 }
 
@@ -64,6 +68,7 @@ p {
   margin: 10px;
 
 }
+
 
 .bar1, .bar2, .bar3 {
   width: 35px;
@@ -86,9 +91,6 @@ p {
 .about-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-
-  
 }
 
 .img {
@@ -131,19 +133,19 @@ a {
 	width: 60%;
 	z-index: 1;
 	overflow: auto;
-  justify-content: center;
   margin: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 25px 5px;
+  display: none;
  
 }
 
 #modal-textbox {
 	background-color: transparent;
-	height: 300px;
-	width: 300px;
+	height: auto;
+	width: 100%;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  padding: 8%;
+  padding: 3%;
   line-height: 120%;
   font-style: helvetica;
   
@@ -151,31 +153,37 @@ a {
 }
 
 #openModal {
-  background-color: rgba(0,0,0,0.4);
   border-color: transparent;
   color: white;
-  height: fit-content;
-  width: auto;
   border-radius: 10px;
   font-size: xx-large;
-  
+  transition: ease .3s;
+  animation-delay: 3s;
+  text-decoration: none;
+  text-shadow: 5px 5px 10px black;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;  
+  cursor: pointer;
+  display: flex;
+
 }
 
 #close {
   font-style: tahoma;
   color: white;
   text-decoration: none;
-  margin: 0 40px 20px 100px
-  
+  margin: 10px;
+  border-radius: 10px;
 }
 
 #modal-footer {
   text-align: right;
+  justify-content: right;
  
 }
 
 .modal-buttons {
-	padding: 14px 18px;
+	padding: 10px 10px;
 	background-color: transparent;
 	border: none;
 	outline: none;
@@ -188,10 +196,10 @@ a {
 
 
 .ResumeButton {
-  text-align: right;
+  text-align: center;
   margin: 5px;
-  height: 75px;
-  width: 150px;
+  height: 50px;
+  width: auto;
   color: white;
   border: transparent;
   font-size: x-large;
@@ -205,10 +213,10 @@ a {
 }
 
 .ProjectButton {
-  text-align: right;
+  text-align: center;
   margin: 5px;
-  height: 75px;
-  width: 150px;
+  height: 50px;
+  width: auto;
   color: white;
   border: transparent;
   font-size: x-large;
@@ -222,10 +230,10 @@ a {
 }
 
 .HomeButton {
-    text-align: right;
-    margin: 5px;
-    height: 75px;
-    width: 150px;
+  text-align: center;
+  margin: 5px;
+  height: 50px;
+  width: auto;
     color: white;
     border: transparent;
     font-size: x-large;
@@ -265,4 +273,17 @@ a {
 
   .hidden {
     display: none;
+  }
+
+  .open {
+    display: flex;
+    justify-content: left;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 50px;
+
   }

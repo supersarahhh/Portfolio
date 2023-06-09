@@ -79,8 +79,7 @@ body    {
 
 #openModal {
   color: white;
-  margin-left: 20px;
-  margin-top: 20px;
+ 
   font-size: xx-large;
 }
 
@@ -124,9 +123,10 @@ justify-content: left;
 }
 
 .AboutButton {
-  text-align: right;
-  height: 75px;
-  width: 150px;
+  text-align: center;
+  margin: 5px;
+  height: 50px;
+  width: auto;
   color: white;
   border: transparent;
   font-size: x-large;
@@ -135,15 +135,15 @@ justify-content: left;
 
   background-color: transparent;
   justify-content: space-evenly;
-  justify-content: space-around;
-  justify-content: space-between;
+
 }
 
 
 .ProjectButton {
-  text-align: right;
-  height: 75px;
-  width: 150px;
+  text-align: center;
+  margin: 5px;
+  height: 50px;
+  width: auto;
   color: white;
   border: transparent;
   font-size: x-large;
@@ -152,14 +152,14 @@ justify-content: left;
 
   background-color: transparent;
   justify-content: space-evenly;
-  justify-content: space-around;
-  justify-content: space-between;
+ 
 }
 
 .HomeButton {
-  text-align: right;
-  height: 75px;
-  width: 150px;
+  text-align: center;
+  margin: 5px;
+  height: 50px;
+  width: auto;
   color: white;
   border: transparent;
   font-size: x-large;
@@ -168,8 +168,7 @@ justify-content: left;
 
   background-color: transparent;
   justify-content: space-evenly;
-  justify-content: space-around;
-  justify-content: space-between;
+  
 
   }
 
@@ -230,4 +229,12 @@ justify-content: left;
 
 .hidden {
   display: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 50px;
+
 }

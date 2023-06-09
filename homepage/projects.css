@@ -18,20 +18,22 @@ h1 {
   text-shadow: 5px 5px 10px black;
   font-family: 'Montserrat', sans-serif;  
   font-weight: 500;
-  margin-right: 75%;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  align-self: flex-start;
 }
-
 
 .nav {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 10px;
+  justify-content: right;
+  margin-right: 50px;
 }
 
 .carousel-container {
   width: auto;
-  height: 75vh;
+  height: 60vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -51,6 +53,7 @@ h1 {
   display: flex;
   align-self: center;
   
+  
 }
 
 .carousel-images img {
@@ -60,7 +63,7 @@ h1 {
   opacity: 80%;
   margin: 0px 10px;
   align-self: center;
-
+  box-shadow: 5px 5px 85px 25px;
 }
 
 .next, .previous {
@@ -88,9 +91,10 @@ h1 {
 }
 
 .ResumeButton {
-  text-align: right;
-  height: 75px;
-  width: 150px;
+  text-align: center;
+  margin: 5px;
+  height: 50px;
+  width: auto;
   color: white;
   border: transparent;
   font-size: x-large;
@@ -105,9 +109,10 @@ h1 {
 }
 
 .AboutButton {
-  text-align: right;
-  height: 75px;
-  width: 150px;
+  text-align: center;
+  margin: 5px;
+  height: 50px;
+  width: auto;
   color: white;
   border: transparent;
   font-size: x-large;
@@ -121,9 +126,10 @@ h1 {
 }
 
 .HomeButton {
-  text-align: right;
-  height: 75px;
-  width: 150px;
+  text-align: center;
+  margin: 5px;
+  height: 50px;
+  width: auto;
   color: white;
   border: transparent;
   font-size: x-large;

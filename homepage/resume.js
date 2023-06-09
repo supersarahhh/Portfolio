@@ -24,12 +24,13 @@ const menuLinks = [
     {text: 'Home', href:'homepage.html'},
     {text: 'About Sarah', href:'about.html'},
     {text: 'Sarah\'s Projects', href: 'projects.html'},
+    {text: 'LinkedIn', href:'https://www.linkedin.com/in/transarah/'}
 ];
 
 const homeBtn = document.querySelector('.HomeButton');
 const aboutBtn = document.querySelector('.AboutButton');
 const projectBtn = document.querySelector('.ProjectButton');
-
+const liBtn = document.querySelector('.linkedin')
 
 homeBtn.addEventListener('click', function() {
   location.href = menuLinks[0].href;
@@ -41,6 +42,10 @@ aboutBtn.addEventListener('click', function() {
 
 projectBtn.addEventListener('click', function() {
     location.href = menuLinks[2].href;
+});
+
+liBtn.addEventListener('click', function() {
+  location.href = menuLinks[3].href;
 });
 
 const kebab = document.querySelector('.menu');
