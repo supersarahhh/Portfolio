@@ -32,7 +32,7 @@ updateCarousel();
 
 
 const menuLinks = [
-    {text: 'Home', href:'homepage.html'},
+    {text: 'Home', href:'index.html'},
     {text: 'Sarah\'s About Me', href: 'about.html'},
     {text: 'Sarah\'s Resume', href:'SarahTranResume-3.pdf'},
     {text: 'LinkedIn', href:'https://www.linkedin.com/in/transarah/'}
