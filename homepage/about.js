@@ -1,6 +1,6 @@
 const menuLinks = [
-    {text: 'Home', href:'homepage.html'},
-    {text: 'Sarah\'s Resume', href:'resume.html'},
+    {text: 'Home', href:'index.html'},
+    {text: 'Sarah\'s Resume', href:'SarahTranResume-3.pdf'},
     {text: 'Sarah\'s Projects', href: 'projects.html'},
     {text: 'LinkedIn', href:'https://www.linkedin.com/in/transarah/'}
 ];
@@ -59,5 +59,5 @@ openBtn.addEventListener('click', openModal);
 
 close.addEventListener('click', closeModal);
 
-  setTimeout(openModal, 1100);
+  setTimeout(openModal, 1000);
 

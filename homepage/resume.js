@@ -21,7 +21,7 @@ close.addEventListener('click', closeModal);
 
 
 const menuLinks = [
-    {text: 'Home', href:'homepage.html'},
+    {text: 'Home', href:'index.html'},
     {text: 'About Sarah', href:'about.html'},
     {text: 'Sarah\'s Projects', href: 'projects.html'},
     {text: 'LinkedIn', href:'https://www.linkedin.com/in/transarah/'}

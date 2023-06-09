@@ -28,13 +28,13 @@ previous.addEventListener('click', () => {
     images[currentImgIndex].style.display = 'block';
 });
 
-
 updateCarousel();
+
 
 const menuLinks = [
     {text: 'Home', href:'homepage.html'},
     {text: 'Sarah\'s About Me', href: 'about.html'},
-    {text: 'Sarah\'s Resume', href:'resume.html'},
+    {text: 'Sarah\'s Resume', href:'SarahTranResume-3.pdf'},
     {text: 'LinkedIn', href:'https://www.linkedin.com/in/transarah/'}
 ];
 
@@ -68,8 +68,7 @@ kebab.addEventListener('click', function() {
   homeBtn.classList.toggle("hidden");
   aboutBtn.classList.toggle("hidden");
   resumeBtn.classList.toggle("hidden");
-
-  console.log('hamburg')
+  
 });
 
 

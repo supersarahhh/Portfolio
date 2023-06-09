@@ -4,8 +4,7 @@ body    {
     background-size: cover;
     max-width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
+   
 }
 
 h1 {
@@ -114,6 +113,8 @@ h1 {
     font-size: 1.4rem;
     width: 0;
     animation: typing 3s steps(20, end) forwards, blink .5s infinite;
+    font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace; 
+    color: antiquewhite;
   }
 
   .typeContainer {

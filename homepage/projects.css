@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-image: url("sk.leeum\ copy\ 2.jpeg");
+  background-image: url("sk.leeum\ copy\.jpeg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -34,12 +34,7 @@ h1 {
 }
 
 .nav {
-  /* display: flex;
-  flex-direction: row;
-  width: 100%; */
   float: right;  
-/* margin-right: 50px; */
-  display: inline-block;
   margin-right: 50px;
 }
 
@@ -50,6 +45,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   margin: 30px auto;
+  padding-top: 0;
 }
 
 .carousel-images {
@@ -219,7 +215,6 @@ h1 {
     width: 50%;
     margin-top: 20%;
   }
-
  
 }
 
@@ -232,21 +227,21 @@ h1 {
     
   }
 
-  .nav {
-    float: right;
-    margin-right: 30px;
+  /* .nav {
+    /* float: right;
+    margin-right: 30px; */
 
-  }
 
   h1 {
-    font-size: large;
+    font-size: medium;
   }
+
 
   .carousel-container {
     height: 50%;
     width: 50%;
 
-  }
+  }  
 } 
 
 
@@ -265,7 +260,7 @@ h1 {
   }
 
   h1 {
-    font-size: medium;
+    font-size: small;
    
   }
 

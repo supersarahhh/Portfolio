@@ -304,6 +304,7 @@ a {
 
       }
 
+      
      
       .pic {
         height: 150px;
@@ -311,7 +312,7 @@ a {
       }
 
       p {
-        font-size: 20px;
+        font-size: 15px;
       }
 
       .pic-container {
@@ -324,8 +325,11 @@ a {
         font-size: medium;
         
       }
-   
 
+      #openModal {
+        font-size: large;
+      }
+   
   }
 
     @media screen and (max-width: 375px) {
@@ -333,24 +337,38 @@ a {
 
       .about-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        height: 500px;
+
       }
 
-      #modal {
-        margin-top: 10px;
-      }
-
+      
+     
       .pic {
-        height: 50%;
+        height: 150px;
+        
       }
+
+      p {
+        font-size: 13px;
+      }
+
+      .pic-container {
+        height: 200px;
+      }
+
       .HomeButton,
       .ResumeButton,
       .ProjectButton {
         font-size: medium;
         
       }
-       
 
-    }
+      #openModal {
+        font-size: large;
+      }
+
+  }
+
 
 
