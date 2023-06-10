@@ -30,7 +30,6 @@ previous.addEventListener('click', () => {
 
 updateCarousel();
 
-
 const menuLinks = [
     {text: 'Home', href:'index.html'},
     {text: 'Sarah\'s About Me', href: 'about.html'},
