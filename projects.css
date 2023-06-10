@@ -20,8 +20,6 @@ body {
 
 
 h1 {
-  height: 50px;
-  width: auto;
   color: white;
   border: transparent;
   font-size: xx-large;
@@ -30,7 +28,18 @@ h1 {
   font-family: 'Montserrat', sans-serif;  
   font-weight: 500;
   margin-left: 10px;
+  margin-top: 5px;
  
+}
+
+h2 {
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  font-family: 'Montserrat', sans-serif;  
+  font-weight: 500;
+  font-size: small;
+  justify-content: center;
+  text-align: center;
 }
 
 .nav {
@@ -44,8 +53,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin:  auto;
-  padding-top: 0;
+  margin: 5%;
 }
 
 .carousel-images {
@@ -84,8 +92,22 @@ h1 {
   color: aliceblue;
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
   margin: 20px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.git {
+  border-radius: 8px;
+  background-color: transparent;
+  color: aliceblue;
+  position: fixed;
+  bottom: 0;
+  margin: 15px 60px;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 39px;
 }
 
 .ResumeButton {
@@ -98,6 +120,7 @@ h1 {
   font-size: x-large;
   transition: ease .3s;
   text-decoration: none;
+  cursor: pointer;
 
   background-color: transparent;
   justify-content: space-evenly;
@@ -116,6 +139,7 @@ h1 {
   font-size: x-large;
   transition: ease .3s;
   text-decoration: none;
+  cursor: pointer;
 
   background-color: transparent;
   justify-content: space-evenly;
@@ -133,6 +157,7 @@ h1 {
   font-size: x-large;
   transition: ease .3s;
   text-decoration: none;
+  cursor: pointer;
 
   background-color: transparent;
   justify-content: space-evenly;
@@ -271,9 +296,20 @@ h1 {
   }
 
   .carousel-container {
-    height: 45%;
-    width: 50%;
 
+    margin-left: 15%;
+  }
+
+
+  .carousel-images {
+    height: 75%;
+    width: 75%;
+
+  }  
+
+  .next,
+  .previous {
+    margin-left: 42%;
   }
 
 

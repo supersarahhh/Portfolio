@@ -2,13 +2,15 @@ const menuLinks = [
     {text: 'Home', href:'index.html'},
     {text: 'Sarah\'s Resume', href:'SarahTranResume-3.pdf'},
     {text: 'Sarah\'s Projects', href: 'projects.html'},
-    {text: 'LinkedIn', href:'https://www.linkedin.com/in/transarah/'}
+    {text: 'LinkedIn', href:'https://www.linkedin.com/in/transarah/'},
+    {text: 'LinkedIn', href:'https://github.com/supersarahhh'}
 ];
 
 const homeBtn = document.querySelector('.HomeButton');
 const resumeBtn = document.querySelector('.ResumeButton');
 const projectBtn = document.querySelector('.ProjectButton');
 const liBtn = document.querySelector('.linkedin')
+const gitBtn = document.querySelector('.git')
 
 
 homeBtn.addEventListener('click', function() {
@@ -26,6 +28,10 @@ projectBtn.addEventListener('click', function() {
 
 liBtn.addEventListener('click', function() {
     location.href = menuLinks[3].href;
+});
+
+gitBtn.addEventListener('click', function() {
+  location.href = menuLinks[4].href;
 });
 
 const kebab = document.querySelector('.menu');

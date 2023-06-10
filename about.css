@@ -210,6 +210,8 @@ a {
   justify-content: space-evenly;
   justify-content: space-around;
   justify-content: space-between;
+  cursor: pointer;
+
 }
 
 .ProjectButton {
@@ -222,6 +224,7 @@ a {
   font-size: x-large;
   transition: ease .3s;
   text-decoration: none;
+  cursor: pointer;
 
   background-color: transparent;
   justify-content: space-evenly;
@@ -239,6 +242,8 @@ a {
     font-size: x-large;
     transition: ease .3s;
     text-decoration: none;
+    cursor: pointer;
+
   
     background-color: transparent;
     justify-content: space-evenly;
@@ -267,8 +272,23 @@ a {
     color: aliceblue;
     position: fixed;
     bottom: 0;
-    right: 0;
+    left: 0;
     margin: 20px;
+    border-color: transparent;
+    cursor: pointer;
+
+  }
+
+  .git {
+    border-radius: 8px;
+    background-color: transparent;
+    color: aliceblue;
+    position: fixed;
+    bottom: 0;
+    margin: 15px 60px;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 39px;
   }
 
   .hidden {
