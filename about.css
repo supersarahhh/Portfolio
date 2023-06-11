@@ -12,9 +12,7 @@ body    {
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  height: 100vh;
   font-family: helvetica;
 
 }
@@ -31,20 +29,12 @@ h1 {
   justify-content: left;
 }
 
-.pic-container {
-  height: 75vh;
-  width: auto;
-}
+
 
 .pic {
   height: 45vh;
   width: auto;
   border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  margin: 20px;
-  margin-right: 0px;
-  margin-top: 20px;
   box-shadow: 5px 5px 35px 5px;
 
 }
@@ -90,50 +80,17 @@ p {
 
 .about-container {
   display: flex;
-  flex-direction: row;
-}
-
-.img {
-    margin-left: 10px;
-    margin-right: 0;
-    height: 75px;
-    width: 75px;
-    color: white;
-    border: transparent;
-    font-size: x-large;
-    transition: ease .3s;
-    animation-delay: 3s;
-    text-decoration: none;
-
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-}
-
-a {
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-.headerDiv {
-  display: flex;
-  flex-direction: row;   
-}
-
-.img:hover {
-  opacity: 50%;  
-  box-shadow: 5px 5px 35px 5px;
-  border-radius: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
 }
 
 #modal {
 	background-color: rgba(0,0,0,0.4);
-	left: auto;
-	height: 50%;
-	width: 60%;
-	z-index: 1;
+	height: auto;
 	overflow: auto;
-  margin: 20px;
+  margin: 30px 10%;
   border-radius: 10px;
   box-shadow: 5px 5px 25px 5px;
   display: none;
@@ -145,11 +102,10 @@ a {
 	height: auto;
 	width: 100%;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  padding: 3%;
+  padding: 2%;
   line-height: 120%;
   font-style: helvetica;
-  
-
+  text-align: center;
 }
 
 #openModal {
@@ -169,11 +125,16 @@ a {
 }
 
 #close {
-  font-style: tahoma;
   color: white;
   text-decoration: none;
   margin: 10px;
   border-radius: 10px;
+  background-color: transparent;
+  padding: 10px 10px;
+	border-radius: 350px;
+	font-family: 'Arial';
+	cursor: pointer;
+  box-shadow: 5px 5px 95px 5px black;
 }
 
 #modal-footer {
@@ -181,19 +142,6 @@ a {
   justify-content: right;
  
 }
-
-.modal-buttons {
-	padding: 10px 10px;
-	background-color: transparent;
-	border: none;
-	outline: none;
-	border-radius: 350px;
-	font-family: 'Arial';
-	cursor: pointer;
-  box-shadow: 5px 5px 95px 5px black;
-  
-}
-
 
 .ResumeButton {
   text-align: center;
@@ -291,6 +239,18 @@ a {
     font-size: 39px;
   }
 
+  .home {
+    border-radius: 8px;
+    background-color: transparent;
+    color: aliceblue;
+    position: fixed;
+    bottom: 0;
+    margin: 15px 110px;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 39px;
+}
+
   .hidden {
     display: none;
   }
@@ -309,9 +269,7 @@ a {
   }
 
   @media screen and (max-width: 768px) {
-    .pic {
-      height: 50%;
-    }
+   
    
 }
 
@@ -319,16 +277,14 @@ a {
 
       .about-container{
         display: flex;
-        flex-direction: row;
-        height: 500px;
+        flex-direction: column;
+        height: 90vh;
 
       }
 
-      
-     
+    
       .pic {
-        height: 150px;
-        
+        height: 30vh;
       }
 
       p {
@@ -336,7 +292,8 @@ a {
       }
 
       .pic-container {
-        height: 200px;
+        margin: 15px;
+          
       }
 
       .HomeButton,
@@ -354,27 +311,21 @@ a {
 
     @media screen and (max-width: 375px) {
 
-
-      .about-container{
-        display: flex;
-        flex-direction: row;
-        height: 500px;
-
+      .about-container {
+        flex-direction: column;
       }
 
-      
-     
       .pic {
-        height: 150px;
+        height: 35vh;
+      }
+
+      .pic-container{
+        margin: 10px;
         
       }
-
+     
       p {
         font-size: 13px;
-      }
-
-      .pic-container {
-        height: 200px;
       }
 
       .HomeButton,
@@ -386,6 +337,10 @@ a {
 
       #openModal {
         font-size: large;
+      }
+
+      #close {
+        font-size: xx-small;
       }
 
   }
