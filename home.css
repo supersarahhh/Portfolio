@@ -130,7 +130,6 @@ h1 {
     white-space: nowrap;
     border-right: .10em solid rgb(168, 142, 110);
     font-size: 1.4rem;
-    width: 0;
     animation: typing 3s steps(20, end) forwards, blink .5s infinite;
     font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace; 
     color: antiquewhite;
