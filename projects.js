@@ -2,7 +2,7 @@
 // const previous = document.querySelector('.previous');
 const images = document.querySelectorAll('.images img');
 const imageLinks = [
-    'https://github.com/supersarahhh/dep-',
+    'https://dep-list-a9f48b983424.herokuapp.com',
     'https://meridio-b1615a040797.herokuapp.com/',
     'https://flock-app-5648d3eddff2.herokuapp.com/',
 
