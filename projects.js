@@ -1,34 +1,25 @@
-const next = document.querySelector('.next');
-const previous = document.querySelector('.previous');
-const images = document.getElementsByClassName('images');
+// const next = document.querySelector('.next');
+// const previous = document.querySelector('.previous');
+const images = document.querySelectorAll('.images img');
+const imageLinks = [
+    'https://github.com/supersarahhh/dep-',
+    'https://meridio-b1615a040797.herokuapp.com/',
+    'https://flock-app-5648d3eddff2.herokuapp.com/',
 
-let currentImgIndex = 0;
+]; 
 
-function updateCarousel() {
-    for (let i = 0; i < images.length; i++) {
-        if (i === currentImgIndex) {
-            images[i].style.display = 'block';
-        } else {
-            images[i].style.display = 'none';
+const imagesContainer = document.querySelector('.carousel-images');
+
+imagesContainer.addEventListener('click', (event) => {
+    if (event.target.tagName === 'IMG') {
+        const index = Array.from(imagesContainer.children).indexOf(event.target);
+        if (index >= 0 && index < imageLinks.length) {
+            window.location.href = imageLinks[index];
         }
     }
-}
-
-next.addEventListener('click', () => {
-    images[currentImgIndex].style.display = 'none';
-    
-    currentImgIndex = (currentImgIndex + 1) % images.length;
-    images[currentImgIndex].style.display = 'block';
 });
 
-previous.addEventListener('click', () => {
-    images[currentImgIndex].style.display = 'none';
-    
-    currentImgIndex = (currentImgIndex - 1 + images.length) % images.length;
-    images[currentImgIndex].style.display = 'block';
-});
 
-updateCarousel();
 
 const menuLinks = [
     {text: 'Home', href:'index.html'},

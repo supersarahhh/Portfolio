@@ -177,7 +177,11 @@ h2 {
   justify-content: space-around;
   justify-content: space-between;
 }
+.carousel-images img:hover {
+  cursor: pointer;
 
+
+}
 
 .HomeButton:hover {
     opacity: 50%;  
