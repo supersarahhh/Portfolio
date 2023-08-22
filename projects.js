@@ -1,25 +1,44 @@
-// const next = document.querySelector('.next');
-// const previous = document.querySelector('.previous');
-const images = document.querySelectorAll('.images img');
+const next = document.querySelector('.next');
+const previous = document.querySelector('.previous');
+const slides = document.querySelectorAll('.carousel-slide');
 const imageLinks = [
-    'https://dep-list-a9f48b983424.herokuapp.com',
+    'https://dep-list-a9f48b983424.herokuapp.com/',
     'https://meridio-b1615a040797.herokuapp.com/',
     'https://flock-app-5648d3eddff2.herokuapp.com/',
+];
 
-]; 
+let currentIndex = 0;
 
-const imagesContainer = document.querySelector('.carousel-images');
-
-imagesContainer.addEventListener('click', (event) => {
-    if (event.target.tagName === 'IMG') {
-        const index = Array.from(imagesContainer.children).indexOf(event.target);
-        if (index >= 0 && index < imageLinks.length) {
-            window.location.href = imageLinks[index];
+function updateSlide() {
+    slides.forEach((slide, index) => {
+        if (index === currentIndex) {
+            slide.style.display = 'block';
+        } else {
+            slide.style.display = 'none';
         }
-    }
+    });
+}
+
+function goToNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlide();
+}
+
+function goToPreviousSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlide();
+}
+
+next.addEventListener('click', goToNextSlide);
+previous.addEventListener('click', goToPreviousSlide);
+
+slides.forEach((slide, index) => {
+    slide.addEventListener('click', () => {
+        window.location.href = imageLinks[index];
+    });
 });
 
-
+updateSlide();
 
 const menuLinks = [
     {text: 'Home', href:'index.html'},
