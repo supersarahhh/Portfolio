@@ -1,6 +1,6 @@
 const menuLinks = [
     {text: 'About Sarah', href:'about.html'},
-    {text: 'Sarah\'s Resume', href:'SarahTranResume.pdf'},
+    {text: 'Sarah\'s Resume', href:'SarahTran - Resume 23.pdf'},
     {text: 'Sarah\'s Projects', href: 'projects.html'},
     {text: 'LinkedIn', href:'https://www.linkedin.com/in/transarah/'},
     {text: 'LinkedIn', href:'https://github.com/supersarahhh'}
