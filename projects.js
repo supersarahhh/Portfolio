@@ -43,7 +43,7 @@ updateSlide();
 const menuLinks = [
     {text: 'Home', href:'index.html'},
     {text: 'Sarah\'s About Me', href: 'about.html'},
-    {text: 'Sarah\'s Resume', href:'SarahTranResume.pdf'},
+    {text: 'Sarah\'s Resume', href:'SarahTranResume23.pdf'},
     {text: 'LinkedIn', href:'https://www.linkedin.com/in/transarah/'},
     {text: 'LinkedIn', href:'https://github.com/supersarahhh'},
     {text: 'home-icon', href:'index.html'}
